@@ -1,14 +1,13 @@
 # Privacy Manifesto
 
-Structure de blog Jekyll prete pour GitHub Pages.
+Blog Jekyll pour GitHub Pages avec le theme `jekyll-theme-console`.
+
+Theme utilise: `https://github.com/b2a3e8/jekyll-theme-console`
 
 ## Structure
 
 - `_config.yml` : configuration Jekyll
-- `_layouts/` : templates de pages et d'articles
-- `_includes/` : fragments reutilisables (head, header, footer)
 - `_posts/` : articles du blog
-- `assets/css/main.css` : styles de base
 - `.github/workflows/pages.yml` : pipeline de build/deploiement GitHub Pages
 
 ## Lancer en local
@@ -21,6 +20,15 @@ bundle exec jekyll serve --livereload
 ```
 
 Le site est ensuite disponible sur `http://127.0.0.1:4000`.
+
+## Config theme
+
+La configuration du theme est dans `_config.yml` :
+
+- `remote_theme: b2a3e8/jekyll-theme-console`
+- `plugins: [jekyll-remote-theme, jekyll-feed]`
+- `style: dark` (options du theme: `dark`, `light`, `hacker`)
+- `listen_for_clients_preferred_style: true`
 
 ## Ajouter un article
 
