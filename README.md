@@ -1,15 +1,19 @@
 # Privacy Manifesto
 
-Blog Jekyll pour GitHub Pages avec le theme `jekyll-theme-console`.
+Blog Jekyll pour GitHub Pages avec le theme Leonids.
 
-Theme utilise: `https://github.com/b2a3e8/jekyll-theme-console`
+Theme utilise: `https://github.com/renyuanz/leonids`  
+Version Jekyll utilisee: branche archivee `leonids-jekyll` via `remote_theme`.
+
 Plugin i18n utilise: `https://github.com/untra/polyglot`
 
 ## Structure
 
 - `_config.yml` : configuration Jekyll
+- `_config.dev.yml` : override local pour le `site.url`
 - `_manifestos/` : collection des manifestes
 - `_posts/` : articles du blog
+- `_sass/`, `css/`, `js/`, `fonts/`, `img/` : assets Leonids
 - `.github/workflows/pages.yml` : pipeline de build/deploiement GitHub Pages
 
 ## Lancer en local
@@ -18,21 +22,19 @@ Prerequis : Ruby + Bundler installes.
 
 ```bash
 bundle install
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload --config _config.yml,_config.dev.yml
 ```
 
-Le site est ensuite disponible sur `http://127.0.0.1:4000/privacy-manifesto/`.
+Le site est ensuite disponible sur `http://127.0.0.1:4000/`.
 
 ## Config theme
 
 La configuration du theme est dans `_config.yml`:
 
-- `remote_theme: b2a3e8/jekyll-theme-console`
+- `remote_theme: renyuanz/leonids@leonids-jekyll`
 - `plugins: [jekyll-polyglot, jekyll-remote-theme, jekyll-seo-tag, jekyll-feed]`
-- `style: dark` (options du theme: `dark`, `light`, `hacker`)
-- `listen_for_clients_preferred_style: true`
-- `header_manifestos: true` pour afficher les manifestes dans la topbar
-- `header_manifestos_limit: 5` pour limiter le nombre de liens
+- `owner.*` pour les infos sidebar
+- `header_pages` pour les pages de navigation principales
 
 ## Config multilingue (Polyglot)
 

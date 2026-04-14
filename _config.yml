@@ -1,16 +1,18 @@
 title: Privacy Manifesto
 description: >-
-  Blog Jekyll minimal et propre, prêt pour GitHub Pages.
-baseurl: "/privacy-manifesto"
-url: "https://404loopback.github.io"
+  Blog Privacy Manifesto avec le theme Leonids.
+baseurl: ""
+url: "https://404loopback.github.io/privacy-manifesto"
 lang: fr
 timezone: Europe/Paris
 
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: renyuanz/leonids@leonids-jekyll
+keywords: ["privacy", "blog", "manifesto"]
 
 markdown: kramdown
 kramdown:
   input: GFM
+excerpt_separator: "<!--more-->"
 
 permalink: /:year/:month/:day/:title/
 
@@ -28,6 +30,12 @@ exclude_from_localization:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - css
+  - js
+  - fonts
+  - img
+  - favicon.ico
+  - favicon.png
 parallel_localization: true
 
 collections:
@@ -40,12 +48,16 @@ header_pages:
   - about.md
   - manifestos.md
 
-header_manifestos: true
-header_manifestos_limit: 5
-
-style: dark
-listen_for_clients_preferred_style: true
-footer: "© Privacy Manifesto"
+owner:
+  name: "Privacy Manifesto"
+  avatar: "leonids-logo.png"
+  job: "Digital Rights Blog"
+  bio: "Essais, analyses et manifestes sur la surveillance et l'autonomie numerique."
+  email:
+  disqus-shortname:
+  twitter:
+  facebook:
+  github: "404loopback"
 
 defaults:
   - scope:

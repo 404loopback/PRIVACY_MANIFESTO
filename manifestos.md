@@ -10,7 +10,7 @@ Liste des manifestes publies.
 {% if manifestos_sorted.size > 0 %}
 <ul>
 {% for manifesto in manifestos_sorted %}
-  <li>[ {{ manifesto.date | date: "%Y-%m-%d" }} ] <a href="{{ manifesto.url | relative_url }}">{{ manifesto.title | escape }}</a></li>
+  <li>[ {{ manifesto.date | date: "%Y-%m-%d" }} ] <a href="{{ site.url }}{{ manifesto.url }}">{{ manifesto.title | escape }}</a></li>
 {% endfor %}
 </ul>
 {% else %}
