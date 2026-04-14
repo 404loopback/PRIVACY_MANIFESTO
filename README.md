@@ -50,3 +50,7 @@ date: 2026-04-14 10:00:00 +0200
 Le workflow `.github/workflows/pages.yml` deploye automatiquement le site a chaque push sur `main`.
 
 Dans GitHub : `Settings > Pages > Source = GitHub Actions`.
+
+URL de production (project pages) :
+
+`https://404loopback.github.io/privacy-manifesto/`

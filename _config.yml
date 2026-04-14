@@ -16,6 +16,7 @@ permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
   - jekyll-feed
 
 header_pages:
