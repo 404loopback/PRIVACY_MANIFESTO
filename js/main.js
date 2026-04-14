@@ -36,7 +36,9 @@
 
   function updateToggleLabel(button) {
     if (!button) return;
-    button.textContent = currentTheme() === "dark" ? "light" : "dark";
+    var nextTheme = currentTheme() === "dark" ? "light" : "dark";
+    button.setAttribute("aria-label", "Switch to " + nextTheme + " mode");
+    button.setAttribute("title", "Switch to " + nextTheme + " mode");
   }
 
   function initTheme() {
