@@ -19,9 +19,18 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
+collections:
+  manifestos:
+    output: true
+    permalink: /manifestos/:name/
+
 header_pages:
   - index.md
   - about.md
+  - manifestos.md
+
+header_manifestos: true
+header_manifestos_limit: 5
 
 style: dark
 listen_for_clients_preferred_style: true
@@ -31,6 +40,11 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: manifestos
     values:
       layout: post
   - scope:

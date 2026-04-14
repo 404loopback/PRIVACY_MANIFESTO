@@ -7,6 +7,7 @@ Theme utilise: `https://github.com/b2a3e8/jekyll-theme-console`
 ## Structure
 
 - `_config.yml` : configuration Jekyll
+- `_manifestos/` : collection des manifestes
 - `_posts/` : articles du blog
 - `.github/workflows/pages.yml` : pipeline de build/deploiement GitHub Pages
 
@@ -29,6 +30,8 @@ La configuration du theme est dans `_config.yml` :
 - `plugins: [jekyll-remote-theme, jekyll-feed]`
 - `style: dark` (options du theme: `dark`, `light`, `hacker`)
 - `listen_for_clients_preferred_style: true`
+- `header_manifestos: true` pour afficher les manifestes dans la topbar
+- `header_manifestos_limit: 5` pour limiter le nombre de liens
 
 ## Ajouter un article
 
@@ -42,6 +45,17 @@ avec un front matter minimal :
 ---
 title: "Titre de l'article"
 date: 2026-04-14 10:00:00 +0200
+---
+```
+
+## Ajouter un manifeste
+
+Creer un fichier dans `_manifestos/` (par exemple `YYYY-MM-DD-manifeste.md`) avec:
+
+```yaml
+---
+title: "Titre du manifeste"
+date: 2026-04-14 21:15:00 +0200
 ---
 ```
 

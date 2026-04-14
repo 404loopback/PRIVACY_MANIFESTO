@@ -1,0 +1,27 @@
+{%- assign default_paths = site.html_pages | map: 'path' -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign manifestos_enabled = site.header_manifestos | default: true -%}
+{%- assign manifestos_limit = site.header_manifestos_limit | default: 5 -%}
+<header>
+  <div class="menu">
+    <ul>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <li>
+          <a href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ my_page.title | escape }}</a>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if manifestos_enabled and site.manifestos and site.manifestos.size > 0 -%}
+        {%- assign manifestos_sorted = site.manifestos | sort: "date" | reverse -%}
+        {%- for manifesto in manifestos_sorted limit: manifestos_limit -%}
+        <li>
+          <a href="{{ manifesto.url | relative_url }}"{% if page.url == manifesto.url %} aria-current="page"{% endif %}>{{ manifesto.title | escape }}</a>
+        </li>
+        {%- endfor -%}
+      {%- endif -%}
+    </ul>
+  </div>
+</header>
