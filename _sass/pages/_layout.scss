@@ -32,8 +32,11 @@
   .author_name {
     display: block;
     color: #F36170;
-    font-size: 1.75em;
-    text-transform: lowercase;
+    font-family: "Montserrat", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 1.08;
+    font-weight: 700;
+    text-transform: none;
   }
   .author_job {
     display: block;

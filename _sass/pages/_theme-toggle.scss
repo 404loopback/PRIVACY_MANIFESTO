@@ -1,11 +1,15 @@
 .theme-toggle {
-  margin: 0 0 0.65rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
   border: 0;
   background: transparent;
   color: #7c6bc8;
   padding: 0;
   line-height: 0;
   cursor: pointer;
+  z-index: 2;
 }
 
 .theme-toggle:hover,
@@ -25,6 +29,17 @@
 .theme-toggle svg {
   width: 24px;
   height: 24px;
+}
+
+.cover-card {
+  position: relative;
+  padding-bottom: 2.2rem;
+}
+
+@include media-query($medium-screen) {
+  .cover-card {
+    padding-bottom: 80px;
+  }
 }
 
 html.theme-light .theme-toggle .icon-sun {
