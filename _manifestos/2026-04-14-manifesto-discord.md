@@ -10,9 +10,7 @@ lang: fr
 
 Discord n'est pas un simple outil de discussion.
 Sa popularité, sa facilité d'accès et son apparente gratuité en font une **infrastructure sociale centrale** majeure ; on y travaille, on y joue, on y milite, on y apprend, on y organise des communautés, on y maintient des liens.
-Pour cette raison, il faut sortir de l’illusion de neutralité technologique :
-
-Ce n'est plus uniquement une interface sympa pour discuter en communauté. C’est un système technique, économique et politique qui s'inscrit dans une transformation plus large d’internet : le passage d’un réseau d’échange à une **architecture de capture**, de suivi et de mise en valeur des interactions humaines.
+Pour cette raison, il faut sortir de l’illusion de neutralité technologique : Ce n'est plus uniquement une interface sympa pour discuter en communauté. C’est un système technique, économique et politique qui s'inscrit dans une transformation plus large d’internet : le passage d’un réseau d’échange à une **architecture de capture**, de suivi et de mise en valeur des interactions humaines.
 
 Le problème n’est donc pas uniquement ce que Discord fait déjà de manière visible. Le problème est la structure même du modèle : une centralisation massive des échanges sociaux dans un environnement privé, opaque et gouverné par des impératifs de croissance économique.
 
@@ -28,9 +26,7 @@ Le revenu visible de Discord (principalement **Nitro**) semble insuffisant face 
 Cette disproportion impose une question simple : qu’est-ce qui soutient réellement la plateforme ?
 
 La réponse ne se limite pas aux revenus présents. Elle se trouve dans l’investissement, donc dans l’anticipation de revenus futurs. Une entreprise financée par des levées massives de capitaux n’hérite pas seulement d’argent : elle hérite d’une contrainte. Elle doit justifier sa valorisation et produire, tôt ou tard, un rendement.
-
 Pour [Nick Srnicek](#), l'idée centrale est que la logique des plateformes est souvent séquentielle:
-
 1. capter les utilisateurs
 2. créer la dépendance
 3. monétiser ensuite
@@ -49,16 +45,15 @@ Plus une entreprise peut démontrer :
 - des communautés fortement engagées
 - des signaux comportementaux réguliers
 
-plus elle peut soutenir, devant investisseurs et partenaires, une promesse crédible de rentabilité future.[1]
+plus elle peut soutenir, devant investisseurs et partenaires, une promesse crédible de rentabilité future.[^1]
 
 Le point décisif est de comprendre qu’un stock massif de données relationnelles et comportementales produit immédiatement de la valeur stratégique. Il renforce la valorisation financière de l’entreprise, ouvre des possibilités de ciblage, alimente des projections de monétisation et augmente l’intérêt de tiers pour l’écosystème qu’elle contrôle.
 
 Un tel stock de données crée donc simultanément :
-
-une incitation économique forte à l’exploitation
-une surface d’attaque élargie
-un risque accru de réutilisation hors du contexte initial
-une asymétrie radicale entre ce que les usagers livrent et ce qu’ils savent réellement des usages possibles
+- une incitation économique forte à l’exploitation
+- une surface d’attaque élargie
+- un risque accru de réutilisation hors du contexte initial
+- une asymétrie radicale entre ce que les usagers livrent et ce qu’ils savent réellement des usages possibles
 
 Autrement dit : même avant toute exploitation explicite, la donnée est déjà un actif.
 
@@ -66,7 +61,7 @@ Autrement dit : même avant toute exploitation explicite, la donnée est déjà 
 
 Le problème n'est pas seulement la vente ou la fuite de données, c'est aussi la conversion de l'expérience humaine en **matière exploitable**.
 
-[Shoshana Zuboff](https://www.hup.harvard.edu/books/9781610395691) décrit ce basculement : ce que les individus vivent, disent, ressentent ou coordonnent devient une ressource susceptible d’être extraite, modélisée, corrélée et convertie en prédictions.[2]
+[Shoshana Zuboff](https://www.hup.harvard.edu/books/9781610395691) décrit ce basculement : ce que les individus vivent, disent, ressentent ou coordonnent devient une ressource susceptible d’être extraite, modélisée, corrélée et convertie en prédictions.[^2]
 
 Discord concentre précisément ce type de matière. Les échanges qui y circulent sont souvent perçus par les usagers comme informels, spontanés, communautaires, parfois semi-privés. C’est ce qui leur donne une valeur particulière. On y trouve non pas un langage public et policé, mais un langage situé, vivant, contextuel : débats, humour, confidences, habitudes de groupe, conflits, rituels, apprentissages, hiérarchies implicites.
 
@@ -86,9 +81,9 @@ Et l’enjeu dépasse largement le contenu des messages. Les *métadonnées* ell
 - habitudes collectives
 - circulation de l’attention
 
-Même sans lire un mot du contenu, une plateforme peut déjà savoir beaucoup.[3]: Qui parle à qui, quand, à quelle fréquence, dans quel contexte, avec quels effets de regroupement ou d’isolement. *Ce savoir n’est pas neutre. C’est déjà une forme de pouvoir*[4].
+Même sans lire un mot du contenu, une plateforme peut déjà savoir beaucoup.[^3]: Qui parle à qui, quand, à quelle fréquence, dans quel contexte, avec quels effets de regroupement ou d’isolement. *Ce savoir n’est pas neutre. C’est déjà une forme de pouvoir*[^4].
 
-Ce problème est loin d'être nouveau, en XXXX la [FTC](https://www.ftc.gov/) a également souligné la sur-collecte récurrente de données par les grandes plateformes.[5]
+Ce problème est loin d'être nouveau, en XXXX la [FTC](https://www.ftc.gov/) a également souligné la sur-collecte récurrente de données par les grandes plateformes.[^5]
 
 
 ## III. Un problème structurel et non pas accidentel
@@ -144,7 +139,7 @@ C’est là un point politique fondamental : nous avons laissé des infrastructu
 Le problème n’est donc pas seulement la surveillance. Le problème est la privatisation du social.
 
 
-## IV. La normalisation silencieuse
+## V. La normalisation silencieuse
 
 À mesure que Discord et d’autres plateformes semblables deviennent omniprésentes, certaines pratiques cessent d’apparaître comme problématiques. Elles deviennent banales.
 
