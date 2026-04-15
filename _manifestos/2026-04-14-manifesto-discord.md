@@ -34,7 +34,7 @@ Pour Nick Srnicek[^srnicek], l'idée centrale est que la logique des plateformes
 3. pour enfin monétiser
 
 L'absence de monétisation agressive aujourd'hui n'est donc pas une garantie pour demain, au contraire.
-En 2022, Discord réalise environ 445 M$ de chiffre d'affaires pour ~152 M d'utilisateurs actifs mensuels, mais perd encore environ 66 M$ en résultat d'exploitation, ce qui implique des dépenses totales de ~511 M$ et un coût d'environ 3,4 $/utilisateur/an pour seulement 2,9 $ de revenu/ utilisateur/an[^economics].
+En 2022, Discord réalise environ 445 M$ de chiffre d'affaires pour ~152 M d'utilisateurs actifs mensuels, mais perd encore environ 66 M$ en résultat d'exploitation, ce qui implique des dépenses totales de ~511 M$ et un coût d'environ 3,4 $/utilisateur/an pour seulement 2,9 $ de revenu/ utilisateur/an[^economics][^reuters_funding].
 
 En projetant ce ratio à l’ensemble de la base d’utilisateurs, on constate que les dépenses structurelles restent supérieures aux revenus. Cette différence n’est pas absorbée par le modèle économique actuel, mais par les capitaux levés auprès des investisseurs.
 
@@ -53,9 +53,9 @@ Plus une entreprise peut démontrer :
 - des communautés fortement engagées
 - des signaux comportementaux réguliers
 
-plus elle peut soutenir, devant investisseurs et partenaires, une promesse crédible de rentabilité future[^datacapitalism].
+plus elle peut soutenir, devant investisseurs et partenaires, une promesse crédible de rentabilité future[^datacapitalism][^instagram_data].
 
-La documentation officielle montre que la plateforme collecte non seulement des contenus, mais aussi des données d’usage, de contexte et de relation : appareils utilisés, adresses IP, événements d’usage, serveurs et salons visités, bots et apps avec lesquels on interagit, rôles, communautés rejointes, et divers signaux d’activité. Même lorsque ces données ne sont pas revendues comme telles, elles constituent un actif stratégique : elles servent à faire fonctionner la plateforme, à la personnaliser, à la modérer, à produire des projections de croissance crédibles et à soutenir une valorisation financière élevée.
+La documentation officielle montre que la plateforme collecte non seulement des contenus, mais aussi des données d'usage, de contexte et de relation[^discord_privacy_policy] : appareils utilisés, adresses IP, événements d'usage, serveurs et salons visités, bots et apps avec lesquels on interagit, rôles, communautés rejointes, et divers signaux d'activité. Même lorsque ces données ne sont pas revendues comme telles, elles constituent un actif stratégique : elles servent à faire fonctionner la plateforme, à la personnaliser, à la modérer, à produire des projections de croissance crédibles et à soutenir une valorisation financière élevée.
 
 Il est important de comprendre que la valeur économique de Discord ne repose pas uniquement sur ses revenus actuels ; malgré une rentabilité incertaine et un revenu par utilisateur très faible, la plateforme a atteint des valorisations de plusieurs milliards de dollars. Cette valorisation repose sur des indicateurs comme l’engagement, la densité des réseaux sociaux et le potentiel futur de monétisation. Autrement dit, ce qui est valorisé, ce n’est pas seulement ce que la plateforme gagne aujourd’hui, mais ce qu’elle pourrait exploiter demain.
 
@@ -75,7 +75,7 @@ Le problème n'est pas seulement la vente ou la fuite de données, c'est aussi l
 
 Discord concentre précisément ce type de matière. Les échanges qui y circulent sont souvent perçus par les usagers comme informels, spontanés, communautaires, parfois semi-privés. C’est ce qui leur donne une valeur particulière. On y trouve non pas un langage public et policé, mais un langage situé, vivant, contextuel : débats, humour, confidences, habitudes de groupe, conflits, rituels, apprentissages, hiérarchies implicites.
 
-Ce type de corpus est stratégiquement précieux. Non seulement pour le ciblage commercial, mais aussi pour l’analyse linguistique, la modélisation des interactions sociales et l’entraînement de systèmes d’IA capables d’exploiter :
+Ce type de corpus est stratégiquement précieux[^acl_nlp][^acl_data_requests]. Non seulement pour le ciblage commercial, mais aussi pour l'analyse linguistique, la modélisation des interactions sociales et l'entraînement de systèmes d'IA capables d'exploiter :
 - le langage en contexte
 - les émotions
 - les rythmes conversationnels
@@ -91,7 +91,7 @@ Et l’enjeu dépasse largement le contenu des messages. Les *métadonnées* ell
 - habitudes collectives
 - circulation de l’attention
 
-Même sans lire un mot du contenu, une plateforme peut déjà savoir beaucoup[^metadata]: Qui parle à qui, quand, à quelle fréquence, dans quel contexte, avec quels effets de regroupement ou d'isolement. *Ce savoir n'est pas neutre. C'est déjà une forme de pouvoir*[^conversational].
+Même sans lire un mot du contenu, une plateforme peut déjà savoir beaucoup[^metadata]: Qui parle à qui, quand, à quelle fréquence, dans quel contexte, avec quels effets de regroupement ou d'isolement. *Ce savoir n'est pas neutre. C'est déjà une forme de pouvoir*[^conversational][^edpb].
 
 Ce problème est loin d'être nouveau, en septembre 2024, la FTC a publié un rapport sur neuf grandes plateformes, dont Discord, concluant que ce secteur pratiquait une surveillance commerciale de grande ampleur, avec collecte extensive, partage large et conservation parfois indéfinie de données[^ftc2024]. Ce rapport ne vise pas Discord isolément, mais il documente le cadre structurel dans lequel s’inscrivent les grandes plateformes sociales.
 
@@ -133,7 +133,8 @@ C’est là l’une des forces majeures des plateformes contemporaines : elles t
 
 Lorsqu’une plateforme devient indispensable à l’organisation de la vie collective, elle cesse d’être un simple outil. Elle devient une infrastructure. Et une infrastructure ne fait pas qu’héberger des pratiques : elle les oriente, les rend possibles ou impossibles, les hiérarchise et les filtre.
 
-Discord décide :
+Discord décide[^discord_safety_hub][^discord_data_request] :
+- des formes de visibilité
 - des formes de visibilité
 - des modalités d’accès
 - des conditions de modération
@@ -204,7 +205,6 @@ Le rapport 2024 de la FTC est particulièrement utile parce qu’il inclut expli
 6. Pression économique, valorisation, horizon de monétisation
 Reuters rapporte qu'en 2021 Discord a levé 500 millions de dollars, dans une opération valorisant la société autour de 15 milliards, et Reuters a ensuite rapporté en janvier 2026 un dépôt confidentiel en vue d'une IPO. Discord a été porté par une forte logique de valorisation financière et reste inscrit dans un horizon de soutenabilité / rentabilité attendu par les marchés. [source](https://www.reuters.com/technology/chat-app-discord-raises-500-million-new-funding-2021-09-16/)
 
-7. Nick Srnicek — Platform Capitalism (Polity, 2017)
 
 ## Références
 
@@ -224,20 +224,28 @@ Reuters rapporte qu'en 2021 Discord a levé 500 millions de dollars, dans une op
 
 [^ftc2024]: U.S. Federal Trade Commission, *A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services*, September 2024. https://www.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf — Discord est explicitement incluse dans cette enquête sur les pratiques de surveillance commerciale des plateformes sociales.
 
-[1]: Les rapports institutionnels sur les plateformes numériques montrent que les données des utilisateurs alimentent des modèles de publicité ciblée et peuvent faire l’objet de partages ou d’accès par des tiers
+[^reuters_funding]: Reuters. "Chat app Discord raises $500 million in new funding", 2021. https://www.reuters.com/technology/chat-app-discord-raises-500-million-new-funding-2021-09-16/ — Financement majeur valorisant Discord autour de 15 milliards de dollars.
 
-[2]:Les travaux présentés notamment à [ACL](https://aclanthology.org/) et [NeurIPS](https://neurips.cc/) montrent la valeur des données conversationnelles réelles en terme de langage en contexte, d'émotions et de coordination sociale
+[^discord_privacy_policy]: Discord Privacy Policy. Collecte documentée de données d'usage, de contexte et de relation : IP, système d'exploitation, navigateur, réglages du micro et de la caméra, journaux d'événements, pages/serveurs/salons visités, activités et surfaces interactives. https://discord.com/privacy
 
-[3]: Selon l'[EDPB](https://www.edpb.europa.eu/), ces métadonnées peuvent être extrêmement révélatrices.
+[^discord_safety_hub]: Discord Safety Center & Transparency Hub. Gouvernance des conditions de modération, de visibilité, d'accès, d'archivage, et conditions légales d'accès aux données. https://discord.com/safety-transparency
 
-[4]:Les travaux présentés notamment à [ACL](https://aclanthology.org/) et [NeurIPS](https://neurips.cc/) montrent la valeur des données conversationnelles réelles en terme de langage en contexte, d'émotions et de coordination sociale
+[^discord_privacy]: Discord Privacy Policy — collecte de données d'usage, de contexte et de relation : IP, système d'exploitation, navigateur, réglages du micro et de la caméra, journaux d'événements, pages/serveurs/salons visités. https://discord.com/privacy
 
-[x]: https://discord.com/privacy "Privacy Policy | Discord"
-[x]: https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data "Requesting a Copy of your Data – Discord"
-[x]: https://discord.com/safety-transparency "Transparency Hub | Discord Safety"
-[x]: https://docs.discord.com/developers/docs/getting-started "Building your first Discord Bot - Documentation - Discord"
-[x]: https://www.nspw.org/papers/2020/nspw2020-landau.pdf "Categorizing Uses of Communications Metadata: Systematizing Knowledge and Presenting a Path for Privacy"
-[x]: https://www.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf "A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services"
-[x]: https://www.reuters.com/technology/chat-app-discord-raises-500-million-new-funding-2021-09-16/ "Chat app Discord raises $500 million in new funding | Reuters"
-[x]: https://support.discord.com/hc/en-us/articles/360004957991-Your-Discord-Data-Package "Your Discord Data Package – Discord"
-[x]: https://www.reuters.com/business/chat-platform-discord-confidentially-file-us-ipo-bloomberg-news-reports-2026-01-06/ "Chat platform Discord files confidentially for US IPO, Bloomberg News reports | Reuters"
+[^acl_nlp]: Recherches en linguistique computationnelle. Les corpus conversationnels informels sont une ressource « importante » et largement sous-exploitée pour le tour de parole, le timing, la structure séquentielle et l'action sociale. https://aclanthology.org/2022.acl-long.385.pdf
+
+[^edpb]: European Data Protection Board (EDPB). Les métadonnées de communication peuvent être extrêmement révélatrices pour déterminer l'appareil, identifier l'utilisateur, et profiler sa personnalité et son comportement. https://www.edpb.europa.eu/
+
+[^instagram_data]: Rapports institutionnels sur les plateformes numériques. Les données des utilisateurs alimentent des modèles de publicité ciblée et peuvent faire l'objet de partages ou d'accès par des tiers.
+
+[^acl_data_requests]: ACL et NeurIPS. Les travaux présentés montrent la valeur des données conversationnelles réelles en terme de langage en contexte, d'émotions et de coordination sociale. https://aclanthology.org/2022.acl-long.385.pdf
+
+[^discord_data_request]: Discord Support. "Requesting a Copy of your Data" — permettant aux utilisateurs de demander l'accès. https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data
+
+[^discord_data_package]: Discord Support. "Your Discord Data Package" — package de données personnel. https://support.discord.com/hc/en-us/articles/360004957991-Your-Discord-Data-Package
+
+[^landau_metadata]: Susan Landau. "Categorizing Uses of Communications Metadata" (NSPW, 2020). https://www.nspw.org/papers/2020/nspw2020-landau.pdf
+
+[^ftc_social_media]: U.S. Federal Trade Commission. "A Look Behind the Screens..." (September 2024). https://www.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf
+
+[^discord_bot_docs]: Discord Developer Documentation. "Building your first Discord Bot". https://docs.discord.com/developers/docs/getting-started
