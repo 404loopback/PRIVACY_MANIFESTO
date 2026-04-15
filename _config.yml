@@ -1,8 +1,8 @@
 title: Privacy Manifesto
 description: >-
-  Blog Privacy Manifesto avec le theme Leonids.
-baseurl: "/PRIVACY_MANIFESTO"
-url: "https://404loopback.github.io"
+Privacy Manifesto.
+baseurl: ""
+url: "https://404loopback.github.io/privacy-manifesto"
 lang: fr
 timezone: Europe/Paris
 
