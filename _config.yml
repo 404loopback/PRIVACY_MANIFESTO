@@ -1,8 +1,8 @@
 title: Privacy Manifesto
 description: >-
   Blog Privacy Manifesto avec le theme Leonids.
-baseurl: ""
-url: "https://404loopback.github.io/privacy-manifesto"
+baseurl: "/PRIVACY_MANIFESTO"
+url: "https://404loopback.github.io"
 lang: fr
 timezone: Europe/Paris
 
@@ -52,7 +52,7 @@ owner:
   name: "Privacy Manifesto"
   avatar: "leonids-logo.png"
   job: "Digital Rights Blog"
-  bio: "Essais, analyses et manifestes sur la surveillance et l'autonomie numerique."
+  bio:
   email:
   disqus-shortname:
   twitter:

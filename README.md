@@ -84,4 +84,4 @@ Dans GitHub : `Settings > Pages > Source = GitHub Actions`.
 
 URL de production (project pages) :
 
-`https://404loopback.github.io/privacy-manifesto/`
+`https://404loopback.github.io/PRIVACY_MANIFESTO/`
