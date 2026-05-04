@@ -1,8 +1,19 @@
 ---
-layout: post_listing
-title: Blog
+layout: page
+title: Manifestos
 lang: en
 permalink: /
 ---
 
-Welcome to Privacy Manifesto.
+Published manifestos.
+
+{% assign manifestos_sorted = site.manifestos | sort: "date" | reverse %}
+{% if manifestos_sorted.size > 0 %}
+<ul>
+{% for manifesto in manifestos_sorted %}
+  <li>[ {{ manifesto.date | date: "%Y-%m-%d" }} ] <a href="{{ site.url }}{{ manifesto.url }}">{{ manifesto.title | escape }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+No manifesto yet.
+{% endif %}
