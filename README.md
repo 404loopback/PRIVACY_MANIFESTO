@@ -1,12 +1,4 @@
 # Privacy Manifesto
-
-Blog Jekyll pour GitHub Pages avec le theme Leonids.
-
-Theme utilise: `https://github.com/renyuanz/leonids`  
-Version Jekyll utilisee: branche archivee `leonids-jekyll` via `remote_theme`.
-
-Plugin i18n utilise: `https://github.com/untra/polyglot`
-
 ## Structure
 
 - `_config.yml` : configuration Jekyll
